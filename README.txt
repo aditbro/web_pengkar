@@ -1,1 +1,1 @@
-semoga selesai sebelum deadline
+. . . wtf
