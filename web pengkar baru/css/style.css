@@ -29,7 +29,10 @@ body, html{
 	background-image: url('../gambar/vocomfest.png');
 	min-height: 100%;
 }
-
+.pimg5{
+	background-image: url('../gambar/Itechno.png');
+	min-height: 100%;
+}
 .pimg1, .pimg2, .pimg3{
 	opacity: 1;
 	position: relative;
