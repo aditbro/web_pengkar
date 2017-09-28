@@ -1,0 +1,216 @@
+*{
+	background-color:transparent;
+}
+body, html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Late", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.pimg1{
+	background-image: url("../img/img1.jpg");
+	min-height: 100%;
+}
+
+.pimg2{
+	background-image: url('../gambar/invofest.png');
+	min-height: 100%;
+}
+
+.pimg3{
+	background-image: url('../gambar/ITFEST.png');
+	min-height: 100%;
+}
+.pimg4{
+	background-image: url('../gambar/vocomfest.png');
+	min-height: 100%;
+}
+.pimg5{
+	background-image: url('../gambar/Itechno.png');
+	min-height: 100%;
+}
+.pimg1, .pimg2, .pimg3{
+	opacity: 1;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section1{
+	background-color: rgba(255,255,0,0.9);
+	color: #666;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	margin : auto;
+}
+
+.section2{
+	background-color: yellow;
+	color: #666;
+}
+
+.section3{
+	background-color: yellow;
+	color: #666;
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	height: 40%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color: rgba(200,100,100,0.7);
+	color: #fff;
+	padding: 20px;
+	z-index: 2;
+}
+
+.ptext .border_trans{
+	background-color: yellow;
+}
+
+@media(max-width: 568px){
+	.pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;
+	}
+}
+
+.border a{
+	text-decoration: none;
+}
+.border a:link,
+.border a:visited{
+	-webkit-transition: background-color 2s linear;
+	color: purple;
+}
+
+.border a:hover,
+.border a:active{
+	-webkit-transition: color 2s linear;
+	color : yellow;
+}
+.menu{
+	float: left;
+	width: 80%;
+}
+.logo{
+	float: right;
+	padding-right: 20px;
+	margin: 0;
+}
+#iit_logo{
+	height: 4.5vh;
+	width: auto;
+}
+.menu ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.menu ul li{
+	float: left;
+	width: 5em;
+}
+.ptext .menu-bar{
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+	color: #EEFF41;
+	z-index: 3;
+	font-weight: 100;
+}
+
+.menu-bar a{
+	text-decoration: none;
+}
+.menu-bar a:link,
+.menu-bar a:visited{
+	-webkit-transition: background-color 2s linear;
+	color: yellow;
+}
+
+.menu-bar a:hover,
+.menu-bar a:active{
+	-webkit-transition: color 2s linear;
+	color : purple;
+}
+
+.left-contest{
+	flex: 1;
+	margin: 10px;
+}
+
+.rigth-contest{
+	flex: 1;
+}
+
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	10%{
+		left: 0;
+	}
+	20%{
+		left: -100%;
+	}
+	30%{
+		left: -100%;
+	}
+	40%{
+		left: -200%;
+	}
+	50%{
+		left: -200%;	
+	}
+	60%{
+		left: -200%;
+	}
+	70%{
+		left: -300%;
+	}
+	80%{
+		left: -300%;
+	}
+	90%{
+		left: -400%;
+	}
+}
+
+#slider{
+	overflow: hidden;
+}
+
+#slider figure img{
+	width: auto;
+	height: 100%;
+	float: left;
+}
+
+#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
